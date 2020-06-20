@@ -1,7 +1,5 @@
 # Red Core Blog API Test
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
 This is a Blog API designed to provide the necessary data to the frontend
 
 # Features!
@@ -26,7 +24,7 @@ This API uses a number of open source projects to work properly:
 * [Mongoose] - easy access to mongodb
 
 ### Docker
-Dillinger is very easy to install and deploy in a Docker container.
+The Test API is very easy to install and deploy in a Docker container.
 
 By default, the Docker will expose port 8080, so change this within the Dockerfile if necessary. When ready, simply use the Dockerfile to build the image.
 
