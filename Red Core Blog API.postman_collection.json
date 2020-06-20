@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "13263de8-83c3-440a-8f16-04e0da5afaa6",
+		"name": "Red Core Blog API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Blogs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "localhost/blogs",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"blogs"
+					]
+				},
+				"description": "This request will fetch all blog posts"
+			},
+			"response": []
+		},
+		{
+			"name": "Search Blogs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "localhost/blogs/?title=Vine Review&author=David",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"blogs",
+						""
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Vine Review"
+						},
+						{
+							"key": "author",
+							"value": "David"
+						}
+					]
+				},
+				"description": "This request is like Get Blogs but with search filters"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Blog",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/blogs/5eee0912d63db0009337a58c",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"blogs",
+						"5eee0912d63db0009337a58c"
+					]
+				},
+				"description": "This request will fetch one Blog post"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Blog",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Vine Review",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "David",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "Short and funny",
+							"type": "text"
+						},
+						{
+							"key": "images",
+							"type": "file",
+							"src": []
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "localhost/blogs",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"blogs"
+					]
+				},
+				"description": "This request will add a Blog Post"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Blog",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Youtube Review",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "David",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "Where I can unwind",
+							"type": "text"
+						},
+						{
+							"key": "images",
+							"type": "file",
+							"src": []
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "localhost/blogs/5eee0a71d63db0009337a58d",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"blogs",
+						"5eee0a71d63db0009337a58d"
+					]
+				},
+				"description": "This request will update a Blog post"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Blog",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost/blogs/5eee08c1c82ffa0086d0294e",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"blogs",
+						"5eee08c1c82ffa0086d0294e"
+					]
+				},
+				"description": "This request will delete a Blog post"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
