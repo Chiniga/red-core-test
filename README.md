@@ -22,6 +22,7 @@ This API uses a number of open source projects to work properly:
 * [Express] - fast node.js network app framework [@tjholowaychuk]
 * [Multer] - middleware for handling file uploads
 * [Mongoose] - easy access to mongodb
+* [Docker] - containerizes entire API
 
 ### Docker
 The Test API is very easy to install and deploy in a Docker container.
