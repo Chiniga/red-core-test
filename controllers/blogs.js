@@ -1,11 +1,10 @@
 const Blog = require('../models/blogs');
 
 exports.list = (req, res) => {
-    Blog.find({}).exec((err, blogs) => {
+    Blog.find(req.query).exec((err, blogs) => {
         if (err) {
             res.status(500).send(err);
         }
-        console.log(blogs);
         if(blogs.length === 0) {
             res.send('Blogs not found')
         } else {
@@ -19,7 +18,6 @@ exports.get = (id, res) => {
         if (err) {
             res.status(500).send(err);
         }
-        console.log(blog);
         if(blog === null) {
             res.send('Blog not found')
         } else {
