@@ -1,22 +1,24 @@
 {
-  "name": "nodejs-image-demo",
+  "name": "red-core-test",
   "version": "1.0.0",
-  "description": "nodejs image demo",
-  "author": "katjuell <kathleenjuell@gmail.com>",
-  "license": "MIT",
+  "description": "red core blog test",
+  "author": "david <david.graves.2011@gmail.com>",
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/katjuell/nodejs-image-demo.git"
+    "url": "https://github.com/Chiniga/red-core-test.git"
   },
   "keywords": [
     "nodejs",
-    "bootstrap",
     "express"
   ],
   "dependencies": {
-    "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "mongoose": "^5.4.10"
+    "mongoose": "^5.4.10",
+    "multer": "^1.4.2",
+    "multer-gridfs-storage": "^4.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
   }
 }
